@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <title>Shero Front-End Internship</title>
+  </head>
+  <body>
+    <!-- Promotion Banner -->
+    <div id="promo-bar">
+      <p>Use this banner to advertise a special promotion—20% off!</p>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+      <!-- PC Navigation -->
+      <nav id="navbar">
+        <!-- Top Navigation Row -->
+        <div class="navbar-top">
+          <ul class="nav-links">
+            <li><a href="#">STITCH REWARDS</a></li>
+            <li><a href="#">QUICK ORDER</a></li>
+            <li class="store-locator">
+              <img
+                src="assets/map-symbol.svg"
+                alt="Store Locator"
+                width="20"
+                height="20"
+              />
+              <a href="#">STORE LOCATOR</a>
+            </li>
+          </ul>
+
+          <ul class="nav-links">
+            <li><a href="#">CART</a></li>
+            <li class="vertical-line-divider"></li>
+            <li><a href="#">SIGN UP</a></li>
+            <li class="divider">–</li>
+            <li><a href="#">LOG IN</a></li>
+            <li>
+              <button class="search-btn" aria-label="Search">
+                <img
+                  src="assets/search-icon.svg"
+                  alt="Search"
+                  width="17"
+                  height="19"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Main Navigation Row -->
+        <div class="navbar-bottom">
+          <div class="logo">
+            <a href="/">
+              <img src="assets/logo.svg" alt="Logo" width="210" height="67" />
+            </a>
+          </div>
+
+          <ul class="nav-links">
+            <li>
+              <a href="#"
+                >Top Thread
+                <img
+                  class="arrow-down"
+                  src="assets/arrow-down.svg"
+                  alt="arrow-down"
+                  width="20"
+                  height="20"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                >Bobbins
+                <img
+                  class="arrow-down"
+                  src="assets/arrow-down.svg"
+                  alt="arrow-down"
+                  width="20"
+                  height="20"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                >Stabilizer
+                <img
+                  class="arrow-down"
+                  src="assets/arrow-down.svg"
+                  alt="arrow-down"
+                  width="20"
+                  height="20"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                >Displays
+                <img
+                  class="arrow-down"
+                  src="assets/arrow-down.svg"
+                  alt="arrow-down"
+                  width="20"
+                  height="20"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                >Notions
+                <img
+                  class="arrow-down"
+                  src="assets/arrow-down.svg"
+                  alt="arrow-down"
+                  width="20"
+                  height="20"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation -->
+
+      <nav id="navbar-mobile">
+        <img src="assets/logo.svg" alt="Logo" width="100" height="auto" />
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <div class="off-screen-menu">
+        <ul class="nav-links">
+          <li><a href="#">STITCH REWARDS</a></li>
+          <li><a href="#">QUICK ORDER</a></li>
+          <li><a href="#">STORE LOCATOR</a></li>
+          <li><a href="#">CART</a></li>
+          <li><a href="#">SIGN UP</a></li>
+          <li><a href="#">LOG IN</a></li>
+          <li><a href="#">SEARCH</a></li>
+          <li><a href="#">Top Thread </a></li>
+          <li><a href="#">Bobbins </a></li>
+          <li><a href="#">Stabilizer</a></li>
+          <li><a href="#">Displays</a></li>
+          <li><a href="#">Notions</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <img
+            src="assets/hero-image.png"
+            alt="Hero Background"
+            class="hero-image"
+          />
+          <div class="hero-overlay">
+            <h1>Add color to your masterpiece</h1>
+            <button class="hero-btn">Shop Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Section Carousel -->
+      <section class="products-carousel glide">
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <img src="assets/left-arrow.svg" alt="Left" />
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <img src="assets/right-arrow.svg" alt="Right" />
+          </button>
+        </div>
+
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="assets/product-2.jpg" alt="Product 2" />
+              <h3>GLIDE</h3>
+            </li>
+            <li class="glide__slide">
+              <img src="assets/product-3.jpg" alt="Product 3" />
+              <h3>MAGNETIC CORE BOBBIN</h3>
+            </li>
+            <li class="glide__slide">
+              <img src="assets/product-4.jpg" alt="Product 4" />
+              <h3>PREMIUM STABILIZER</h3>
+            </li>
+            <li class="glide__slide">
+              <img src="assets/product-5.jpg" alt="Product 5" />
+              <h3>RETAIL DISPLAYS AND KITS</h3>
+            </li>
+            <li class="glide__slide">
+              <img src="assets/product-1.jpg" alt="Product 1" />
+              <h3>BOUQUET GIFT</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Locations Section -->
+      <section class="locations">
+        <div class="locations-content">
+          <h2>Retail Store Locator</h2>
+          <h1>
+            Buy our products in more <br />
+            than 600 retail stores <br />
+            worldwide
+          </h1>
+          <button class="hero-btn">Search retail store</button>
+        </div>
+
+        <div class="locations-map">
+          <img
+            src="assets/world-map.png"
+            alt="World map showing store locations"
+          />
+        </div>
+      </section>
+
+      <!-- Product Section Carousel -->
+      <section id="featured" class="products-carousel glide">
+        <h1>Featured Products</h1>
+
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img
+                src="assets/featured-product-1.png"
+                alt="Featured Product 1"
+              />
+              <h3>EMBROIDERY STABILIZER</h3>
+            </li>
+            <li class="glide__slide">
+              <img
+                src="assets/featured-product-2.png"
+                alt="Featured Product 2"
+              />
+              <h3>CUBBIE GREY ELEPHANT</h3>
+            </li>
+            <li class="glide__slide">
+              <img
+                src="assets/featured-product-3.png"
+                alt="Featured Product 3"
+              />
+              <h3>KIMBERBELL CUP OF CHEER</h3>
+            </li>
+            <li class="glide__slide">
+              <img
+                src="assets/featured-product-4.png"
+                alt="Featured Product 4"
+              />
+              <h3>KIMBERBELL TWO SCOOPS</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <h1>TESTIMONIALS</h1>
+        <p>
+          As a machine quilter, I love the sheen of Glide and how it adds an
+          extra special touch to my quilts. It's the perfect blend of beauty and
+          strength. Not only do I love the thread, but I love working with
+          Hab+Dash to bring out the best in my quilting. They have been an
+          integral part of our Free Motion Quilting Challenges and helped meet
+          our thread needs each time.
+        </p>
+        <h4>-Angela Walters-</h4>
+        <div>
+          <img src="assets/left-arrow.svg" alt="Left" />
+          <span>1/10</span>
+          <img src="assets/right-arrow.svg" alt="Right" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <img src="assets/logo.svg" alt="Hab+Dash logo" class="footer-logo" />
+          <p class="footer-description">
+            Hab+Dash is a division of the filament technologies company,
+            Fil-Tec, Inc. and is a proud U.S.A. manufacturer of sewing threads
+            and pre-wound bobbins. Our wholesale site is dedicated to offering
+            our manufactured products to commercial embroiderers, long-arm
+            quilters and retail sewing shops. In addition to the products we
+            manufacture, we have sourced the best products and accessories to
+            benefit our customers.
+          </p>
+        </div>
+
+        <nav class="footer-nav">
+          <h2 class="footer-heading">Support</h2>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Stitch Rewards</a></li>
+            <li><a href="#" class="footer-link">Core Return Program</a></li>
+            <li><a href="#" class="footer-link">FAQs</a></li>
+            <li><a href="#" class="footer-link">Terms and Conditions</a></li>
+            <li><a href="#" class="footer-link">Online Dealers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav">
+          <h2 class="footer-heading">Useful Links</h2>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Digital Color Card</a></li>
+            <li><a href="#" class="footer-link">Which Bobbin Fits?</a></li>
+            <li><a href="#" class="footer-link">Color Conversion</a></li>
+            <li><a href="#" class="footer-link">Stabilizer Applications</a></li>
+            <li><a href="#" class="footer-link">Selecting a Stabilizer</a></li>
+            <li><a href="#" class="footer-link">New Site Features</a></li>
+            <li><a href="#" class="footer-link">Institute of Heraldry</a></li>
+            <li><a href="#" class="footer-link">Kimberbell Solids</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav">
+          <h2 class="footer-heading">About Us</h2>
+          <ul class="footer-list">
+            <li><a href="#" class="footer-link">Our Story</a></li>
+            <li><a href="#" class="footer-link">Show Schedule</a></li>
+            <li><a href="#" class="footer-link">Testimonials</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-newsletter">
+          <h2 class="footer-heading">Newsletter Sign Up</h2>
+          <p class="footer-description">
+            Subscribe to our newsletter to unlock exclusive access to
+            promotions, new product launches, and more!
+          </p>
+          <button class="footer-subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+
+      <p class="footer-copyright">© 2024 Hab+Dash. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
